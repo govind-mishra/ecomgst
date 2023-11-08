@@ -5,7 +5,7 @@ var app = express()
 app.use(express.json());
 // API Routes
 app.get('/', (req: Request, res: Response) => {
-    res.redirect('http://localhost:3001/api/data');
+    res.redirect('http://localhost:3000/api/data');
 });
 app.use('/api', apiRoutes);
 
